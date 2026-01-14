@@ -1,0 +1,392 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: 'Inter';
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #141414;
+}
+
+
+.container {
+    width: 100%;
+    margin: auto;
+    max-width: 1400px;
+    padding: 0 20px;
+
+}
+
+.logo a {
+    font-family: 'Calistoga';
+    font-size: 36px;
+    color: #141414;
+    text-decoration: none;
+}
+
+.logo a span {
+    color: #0049cf;
+}
+
+/* HEADER */
+
+header .container {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 100px;
+    border-bottom: 2px outset #0049cf;
+    
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+header nav .leftside {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+header nav li {
+    margin: 0 30px;
+}
+
+header nav li a {
+    color: #141414;
+    text-decoration: none;
+}
+
+header nav li a:hover {
+    color: #999;
+}
+
+header nav .button {
+    display: block;
+    border: 1px solid #FFF;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+header nav .button:hover {
+    color: #999;
+    border-color: #999;
+}
+
+header .menu {
+    display: none;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+header .menu-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+header .menu-icon div {
+    height: 6px;
+    background-color: #FFF;
+}
+
+/* HERO */
+.hero .container {
+    display: flex;
+}
+.hero .leftside,
+.hero .rightside {
+    flex: 1;
+}
+
+.hero .leftside {
+    padding-bottom: 150px;
+
+}
+
+.hero .rightside {
+    text-align: center;   
+}
+
+.hero .rightside img {
+    width: auto;
+    height: 500px;
+    display: flex;
+    position: absolute;
+    top: 75px;
+    padding-left: 120px;
+    margin-top: 50px;
+}
+
+.hero h1 {
+    font-family: 'Calistoga';
+    font-size: 90px;
+    line-height: 74px;
+    margin-top: 190px;
+    color: #ffffff;
+    position: relative;
+}
+
+.hero p {
+    font-size: 30px;
+    line-height: 26px;
+    margin: 40px 0;
+    padding-right: -100px;  
+    position: relative;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.hero .button {
+    display: inline-block;
+    background-color: #FE6A0F;
+    font-weight: 500;
+    color: #FFF;
+    padding: 15px 80px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "calistoga";
+}
+
+.hero .button:hover {
+    opacity: 0.8;
+}
+
+
+.azul {
+    display: flex;
+    background-color: #0048cf00; 
+    width: 100%;
+    height: 200px;
+    margin-top: -60px;
+    position: relative;
+}
+
+.hero .container .leftside .title2{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.hero .container .leftside .para2{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.hero .imghero{
+    width: 100%;
+    height: 730px;
+    position: absolute;
+    filter: brightness(0.5);
+}
+
+
+
+
+.secao-valor {
+    padding: 80px 0; /* Espaçamento interno */
+    background-color: #FFF; /* Cor de fundo leve */
+    text-align: center;
+}
+.secao-valor h2{
+    margin-top: -10px;
+    color: #0049cf;
+    font-family: "calistoga";
+    font-size: 45px;
+}
+.secao-valor p{
+   font-family: "calistoga";
+}
+
+.beneficios-grid {
+    display: grid;
+    /* 3 colunas em telas maiores, ou 2, dependendo do número de itens */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px; /* Espaço entre os cartões */
+    margin-top: 40px;
+}
+
+.beneficio-item {
+    background-color: #022e7e;
+    padding: 50px 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(33, 37, 90, 0.623); /* Sombra leve */
+    transition: transform 0.3s;
+}
+
+.beneficio-item:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+.icone {
+    color: #004d99; /* Use a cor primária da DFL Cargo */
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.beneficio-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.beneficio-item p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+
+/* BOTAO */
+.botao {
+    font-family: 'calistoga';
+    font-size: 20px;
+    border: 1px solid #FFF;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: #c5cffc;
+    border-color: #4498f8;
+}
+
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px 45px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    font-family: "calistoga";
+    font-size: 20px;
+    margin-bottom: 190px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #0856ff;
+    color: #f8f6f6;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #036cf5;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+.parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 100px;
+grid-row-gap: 50px;
+justify-items: center;
+padding-left: 25%;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 2 / 2 / 3 / 3; }
+.div4 { grid-area: 1 / 2 / 2 / 3; }
+.div5 { grid-area: 1 / 3 / 3 / 4; }
+
+.div1{
+    width: 200px;
+    height: auto;
+    background-color: red;
+}
+.div2{
+    width: 200px;
+    height: auto;
+    background-color: red;
+}
+.div3{
+    width: 200px;
+    height: auto;
+    background-color: red;
+}
+.div4{
+    width: 200px;
+    height: auto;
+    background-color: red;
+}
+.div1 svg{
+    width: 50px;
+    height: auto;
+}
+.div2 img{
+    width: 50px;
+    height: auto;
+}
+.div3 svg{
+    width: 50px;
+    height: auto;
+}
+.div4 img{
+    width: 50px;
+    height: auto;
+}
+
